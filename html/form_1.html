@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css" />
+  </head>
+  <body>
+    <div class="ui container">
+      <!--  TopNavigation -->
+      <div class="ui secondary pointing menu">
+        <a href="/" class="item">Home</a>
+        <span class="item">
+          <i class="icon plus"></i>
+          Add new film
+        </span>
+      </div>
+      <!--  END TopNavigation -->
+
+      <div class="ui stackable grid">
+         <div class="six wide column">
+           <!--  form -->
+            <form class="ui form">
+              <div class="ui  grid">
+                <!--  twelve column -->
+                <div class="twelve wide column">
+                  <!--  field Title -->
+                  <div class="field">
+                    <label>Film title</label>
+                    <input
+                      type="text"
+                      name="title"
+                      id="name"
+                      placeholder="film title"
+                    />
+                  </div><!--  END field Title -->
+
+                  <!-- field description -->
+                  <div class="field">
+                    <label>Film description</label>
+                    <textarea
+                      name="description"
+                      id="description"
+                      placeholder="film description"
+                    ></textarea>
+                  </div><!-- field description -->
+
+                </div><!--  / twelve column -->
+
+                <!--  image box -->
+                <div class="four wide column">
+                  <img src="http://via.placeholder.com/250x250" class="ui image"/>
+                </div>
+
+                <div class="twelve wide column field">
+                  <label>Image</label>
+                  <input type="text" name="img" id="img" placeholder="img" />
+                </div><!-- END image box -->
+
+                <div class="six wide column">
+                  <!--  field director -->
+                  <div class="field">
+                    <label>Director</label>
+                    <input
+                      type="text"
+                      name="director"
+                      id="director"
+                      placeholder="film director"
+                    />
+                  </div><!--  EMD field director -->
+                </div><!--  / six wide column -->
+
+                <div class="six wide column">
+                  <!--  field duration -->
+                  <div class="field">
+                    <label>Duration</label>
+                    <input  type="number"  name="duration"  id="duration"  placeholder="Duration" />
+                  </div><!-- END field duration -->
+                </div>
+                <!-- / six wide column field -->
+
+                <!--  field Price -->
+                <div class="six wide column">
+                  <div class="field">
+                    <label>Price</label>
+                    <input
+                      type="number"
+                      name="price"
+                      id="price"
+                      placeholder="price"
+                    />
+                  </div>
+                </div>
+                <!--  END field Price -->
+
+                <!--  field Featured -->
+                <div class="six wide column inline field">
+                  <label for="featured">Featured</label>
+                  <input type="checkbox" name="featured" id="featured" />
+                </div>
+                <!--  END field Featured -->
+              </div>
+              <!-- / ui  grid -->
+
+              <!--  Buttons -->
+              <div class="ui fluid buttons">
+                <button class="ui button primary" type="submit">Save</button>
+                <div class="or"></div>
+                <a href="#" class="ui button">Hide form</a>
+              </div>
+              <!--  END Buttons  -->
+            </form>
+        <!--  form -->
+        </div><!-- six wide column -->
+
+          <div class="ten wide column">
+              <div class="ui four cards">
+                 
+                  <!--  Card begin -->
+                  <div class="ui card">
+                    <a class="ui right corner label">
+                      <i class="empty star icon"></i>
+                    </a>
+                    <div class="image">
+                      <span class="ui green label ribbon">$ 220 </span>
+                      <img src="img/seeker.jpg" alt="" />
+                    </div>
+          
+                    <div class="content">
+                      <a href="#" class="header">Legend of the seeker</a>
+                      <div class="meta">
+                        <i class="icon users"></i> Film Director
+                        <span class="right floated">
+                          <i class="icon wait right"></i> 180 min
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--   / Card end -->
+          
+                  <!--  Card begin -->
+                  <div class="ui card">
+                    <div class="image">
+                      <span class="ui green label ribbon">$ 220 </span>
+                      <a class="ui right corner label">
+                        <i class="yellow star icon"></i>
+                      </a>
+                      <img src="img/siji.jpg" alt="Siji" />
+                    </div>
+          
+                    <div class="content">
+                      <a href="#" class="header">Siji</a>
+                      <div class="meta">
+                        <i class="icon users"></i> Film Director
+                        <span class="right floated">
+                          <i class="icon wait right"></i> 180 min
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  / Card end -->
+                </div>
+          </div><!-- ten wide column -->
+
+      </div><!-- ui stackable grid -->
+    </div><!--  /.ui container -->
+
+
+   
+   
+  </body>
+</html>
